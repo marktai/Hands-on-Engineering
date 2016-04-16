@@ -14,17 +14,7 @@
         "default_title": "Color Change",      // optional; shown in tooltip
         "default_popup": "popup.html"        // optional
     },
-
 	
-	"permissions": [ "activeTab" ],
-
-
-	
-	"content_scripts": [
-		{
-			"matches": ["*"],
-			"js": ["color-change.js"]
-		}
-	]
+	"permissions": [ "activeTab" ]
 
 }
