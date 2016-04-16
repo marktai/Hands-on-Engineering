@@ -1,0 +1,30 @@
+{
+
+	"manifest_version": 2,
+	"name": "Color Change",
+	"version": "1",
+
+	"description": "Changes the color of all text",
+	"author": "UCLA kids",
+
+	"browser_action": {
+	    "default_icon": {                    // optional
+            "19": "images/icon19.png",           // optional
+        },
+        "default_title": "Color Change",      // optional; shown in tooltip
+        "default_popup": "popup.html"        // optional
+    },
+
+	
+	"permissions": [ "activeTab" ],
+
+
+	
+	"content_scripts": [
+		{
+			"matches": ["*"],
+			"js": ["color-change.js"]
+		}
+	]
+
+}
