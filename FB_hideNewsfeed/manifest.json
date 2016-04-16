@@ -1,0 +1,21 @@
+{
+  "name": "HackYourNewsFeed",
+  "description": "Hide Facebook Newsfeed",
+  "version": "0.1",
+  "permissions": [
+    "activeTab", "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.facebook.com/**"
+      ],
+      "js": ["jquery-2.2.0.min.js", "content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "HackYourNewsFeed",
+    "default_icon": "news-128.png"
+  },
+  "manifest_version": 2
+}
