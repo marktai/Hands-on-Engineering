@@ -8,13 +8,17 @@
 	"author": "UCLA kids",
 
 	"browser_action": {
-	    "default_icon": {                    // optional
-            "19": "images/icon19.png",           // optional
-        },
-        "default_title": "Color Change",      // optional; shown in tooltip
+	    "default_icon": "icon.png",          // optional
         "default_popup": "popup.html"        // optional
     },
-	
-	"permissions": [ "activeTab" ]
+
+    "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["color-change.js"]
+    }
+    ],
+
+	"permissions": [ "activeTab", "tabs"]
 
 }
