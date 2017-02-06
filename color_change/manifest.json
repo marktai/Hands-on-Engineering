@@ -8,7 +8,7 @@
 	"author": "UCLA kids",
 
 	"browser_action": {
-	    "default_icon": "icon.png",          // optional
+	"default_icon": "icon.png",          // optional
         "default_popup": "popup.html"        // optional
     },
 
@@ -19,6 +19,6 @@
     }
     ],
 
-	"permissions": [ "activeTab", "tabs"]
+	"permissions": [ "activeTab", "tabs", "https://www.google.com/*"]
 
 }

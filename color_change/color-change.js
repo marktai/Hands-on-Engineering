@@ -30,9 +30,10 @@ function reset()
 	});
 }
 window.onload = function(){
-	$('#red').addEventListener('click', make_red);
-	$('#green').addEventListener('click', make_green);
-	$('#blue').addEventListener('click', make_blue);
-	$('#yellow').addEventListener('click', make_yellow);
-	$('#reset').addEventListener('click', reset);
+	console.log('fwtw');
+	$('#red').on('click', make_red);
+	$('#green').on('click', make_green);
+	$('#blue').on('click', make_blue);
+	$('#yellow').on('click', make_yellow);
+	$('#reset').on('click', reset);
 }
