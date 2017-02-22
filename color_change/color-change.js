@@ -1,6 +1,5 @@
 function make_red()
 {
-	console.log('hi');
 	chrome.tabs.executeScript(null, {
 		code: '$("body").style.backgroundColor = "red"'
 	});
