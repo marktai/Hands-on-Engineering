@@ -1,38 +1,37 @@
 function make_red()
 {
 	chrome.tabs.executeScript(null, {
-		code: '$("body").style.backgroundColor = "red"'
+		code: 'document.getElementsByTagName("Body")[0].style.backgroundColor = "red"'
 	});
 }
 function make_green()
 {
 	chrome.tabs.executeScript(null, {
-		code: '$("body").style.backgroundColor = "green"'
+		code: 'document.getElementsByTagName("Body")[0].style.backgroundColor = "green"'
 	});
 }
 function make_blue()
 {
 	chrome.tabs.executeScript(null, {
-		code: '$("body").style.backgroundColor = "blue"'
+		code: 'document.getElementsByTagName("Body")[0].style.backgroundColor = "blue"'
 	});
 }
 function make_yellow()
 {
 	chrome.tabs.executeScript(null, {
-		code: '$("body").style.backgroundColor = "yellow"'
+		code: 'document.getElementsByTagName("Body")[0].style.backgroundColor = "yellow"'
 	});
 }
 function reset()
 {
 	chrome.tabs.executeScript(null, {
-		code: '$("body").style.backgroundColor = "white"'
+		code: 'document.getElementsByTagName("Body")[0].style.backgroundColor = "white"'
 	});
 }
 window.onload = function(){
-	console.log('fwtw');
-	$('#red').on('click', make_red);
-	$('#green').on('click', make_green);
-	$('#blue').on('click', make_blue);
-	$('#yellow').on('click', make_yellow);
-	$('#reset').on('click', reset);
+	document.getElementById('red').addEventListener('click', make_red);
+	document.getElementById('green').addEventListener('click', make_green);
+	document.getElementById('blue').addEventListener('click', make_blue);
+	document.getElementById('yellow').addEventListener('click', make_yellow);
+	document.getElementById('reset').addEventListener('click', reset);
 }
