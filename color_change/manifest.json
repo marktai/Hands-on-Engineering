@@ -1,24 +1,24 @@
-{
-
-	"manifest_version": 2,
-	"name": "Color Change",
-	"version": "1",
-
-	"description": "Changes the color of all text",
-	"author": "UCLA kids",
-
-	"browser_action": {
-	    "default_icon": "icon.png",          // optional
-        "default_popup": "popup.html"        // optional
-    },
-
-    "content_scripts": [
-    {
-      "matches": ["https://www.google.com/*"],
-      "js": ["color-change.js"]
-    }
-    ],
-
-	"permissions": [ "activeTab", "tabs"]
-
+{
+
+	"manifest_version": 2,
+	"name": "Color Change",
+	"version": "1",
+
+	"description": "Changes the color of all text",
+	"author": "UCLA kids",
+
+	"browser_action": {
+	    "default_icon": "icon.png",          // optional
+        "default_popup": "popup.html"        // optional
+    },
+
+    "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["color-change.js"]
+    }
+    ],
+
+	"permissions": [ "activeTab", "tabs"]
+
 }

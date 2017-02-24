@@ -1,2 +1,2 @@
-# Hands-on-Engineering
-Basic Chrome Extensions for high schoolers
+# Hands-on-Engineering
+Basic Chrome Extensions for high schoolers
